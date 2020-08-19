@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         myWebView.settings.allowContentAccess=true
         myWebView.settings.domStorageEnabled=true
         myWebView.settings.useWideViewPort=true
-        myWebView.settings.setAppCacheEnabled(true)
 
         // Kode WebView End
     }
