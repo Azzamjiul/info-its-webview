@@ -6,7 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.example.myitsinfo.R
+import id.ac.its.ppid.R
 
 class MainActivity : AppCompatActivity() {
 
