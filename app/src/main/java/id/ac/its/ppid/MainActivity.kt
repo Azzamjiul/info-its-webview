@@ -1,4 +1,4 @@
-package com.example.myitsinfo
+package id.ac.its.ppid
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import com.example.myitsinfo.R
 
 class MainActivity : AppCompatActivity() {
 
