@@ -1,12 +1,9 @@
 package com.example.myitsinfo
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
@@ -15,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        setSupportActionBar(findViewById(R.id.toolbar))
+        // setSupportActionBar(findViewById(R.id.toolbar))
 
         // Kode Webview Start
         val myWebView : WebView = findViewById(R.id.webKu)
@@ -39,6 +36,18 @@ class MainActivity : AppCompatActivity() {
         myWebView.settings.useWideViewPort=true
 
         // Kode WebView End
+    }
+
+    // if you press Back button this code will work
+    override fun onBackPressed() {
+        val myWebView : WebView = findViewById(R.id.webKu)
+
+        // if your myWebView can go back it will go back
+        if (myWebView.canGoBack())
+            myWebView.goBack()
+        // if your myWebView cannot go back it will exit the application
+        else
+            super.onBackPressed()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
